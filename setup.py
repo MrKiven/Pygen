@@ -8,14 +8,14 @@ from setuptools import setup, find_packages
 
 def _get_version():
     v_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                               'pygen', '__init__.py')
+                               'src', '__init__.py')
     ver_info_str = re.compile(r".*version_info = \((.*?)\)", re.S). \
         match(open(v_file_path).read()).group(1)
     return re.sub(r'(\'|"|\s+)', '', ver_info_str).replace(',', '.')
 
 
 entry_points = {
-    "console_scripts": ["pygen=pygen.cli:pygen"]
+    "console_scripts": ["pygen=src.cli:pygen"]
 }
 
 install_requires = []
@@ -33,8 +33,8 @@ setup(
     name='pygen',
     version=_get_version(),
     long_description=open('README.md').read(),
-    author="shenjialong",
-    author_email="shenjialong@meituan.com",
+    author="MrKiven",
+    author_email="kiven.mr@gmail.com",
     packages=find_packages(),
     package_data={"": ["LICENSE"]},
     url="",
