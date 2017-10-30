@@ -37,7 +37,7 @@ setup(
     author_email="kiven.mr@gmail.com",
     packages=find_packages(),
     package_data={"": ["LICENSE"]},
-    url="",
+    url="https://github.com/MrKiven/Pygen",
     entry_points=entry_points,
     tests_require=tests_requires,
     install_requires=install_requires,
