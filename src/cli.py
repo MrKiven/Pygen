@@ -6,5 +6,5 @@ import click
 @click.group()
 @click.version_option()
 @click.help_option()
-def pygen():
-    """ Pygen commands entry point."""
+def ppg():
+    """ python project Generator(ppg) commands entry point."""

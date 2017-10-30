@@ -15,7 +15,7 @@ def _get_version():
 
 
 entry_points = {
-    "console_scripts": ["pygen=src.cli:pygen"]
+    "console_scripts": ["ppg=src.cli:ppg"]
 }
 
 install_requires = []
